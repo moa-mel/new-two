@@ -37,7 +37,7 @@ const getGeo = asyncHandler(async (req, res) => {
   
         const response = {
           client_ip: clientIp,
-          greeting: `Hello, ${visitorName}! Your current temperature is ${temp_c}°C.`,
+          greeting: `Hello, ${visitorName}! the temperature is ${temp_c}°C in ${city}.`,
           location: `${city}, ${country}`
         };
         res.json(response);
